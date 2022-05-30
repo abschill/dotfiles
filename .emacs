@@ -36,3 +36,13 @@
 (use-package go-mode)
 (use-package zenburn-theme)
 (load-theme 'zenburn t)
+(use-package web-mode)
+;;(use-package eglot)
+;;(use-package company)
+(use-package flycheck
+  :init(global-flycheck-mode))
+
+;;(use-package crux)
+;;(use-package minimap)
+;;(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+;;(minimap-mode 1)
