@@ -1,9 +1,11 @@
-(set-language-environment "Latin-1")
+;;; Pacakge -- absenv
+;;; Commentary:
+;;; its making me write this for lint
 (setq inhibit-startup-message t)
 (setq make-backup-files nil)
-;;(scroll-bar-mode -1)
-;;(tool-bar-mode -1)
 (setq ring-bell-function 'ignore)
+
+
 (menu-bar-mode -1)
 (set-window-margins nil 1)
 (setq custom-safe-themes t)
@@ -38,11 +40,9 @@
 (load-theme 'zenburn t)
 (use-package web-mode)
 ;;(use-package eglot)
-;;(use-package company)
+(use-package company)
 (use-package flycheck
   :init(global-flycheck-mode))
+(use-package crux)
+(use-package sublimity)
 
-;;(use-package crux)
-;;(use-package minimap)
-;;(add-hook 'window-setup-hook 'toggle-frame-maximized t)
-;;(minimap-mode 1)

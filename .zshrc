@@ -86,6 +86,8 @@ export LANG=en_US.UTF-8
 #
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- alias la="ls -a"
- alias edit="emacs"
- alias eemacs="emacs ~/.emacs"
+alias la="ls -a"
+alias edit="emacs"
+alias eemacs="emacs ~/.emacs"
+alias code="emacs"
+alias e="emacs"
