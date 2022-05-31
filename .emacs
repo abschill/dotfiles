@@ -4,8 +4,6 @@
 (setq inhibit-startup-message t)
 (setq make-backup-files nil)
 (setq ring-bell-function 'ignore)
-
-
 (menu-bar-mode -1)
 (set-window-margins nil 1)
 (setq custom-safe-themes t)
@@ -32,6 +30,7 @@
 (package-refresh-contents)
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
+(use-package company-mode)
 (use-package el-patch)
 (use-package all-the-icons)
 (use-package rust-mode)
@@ -143,3 +142,4 @@
 (use-package ac-html-csswatcher)
 (use-package ac-clang)
 (use-package ac-emmet)
+(add-hook 'after-init-hook 'global-company-mode)
