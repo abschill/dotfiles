@@ -147,4 +147,5 @@
 (use-package compiler-explorer)
 (use-package company-erlang)
 (use-package company-wordfreq)
+(use-package clojure-mode)
 (add-hook 'after-init-hook 'global-company-mode)
