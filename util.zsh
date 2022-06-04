@@ -26,4 +26,20 @@ extract () {
    else
        echo "'$1' is not a valid file!"
    fi
- }
+}
+
+throw() {
+	echo -e "\033[0;31merr:\033[0m\n\t$*"
+}
+
+warn() {
+	echo -e "\033[0;33mwarning:\033[0m\n\t$*"
+}
+
+success() {
+	echo -e "\033[0;32msuccess:\033[0m\n\t$*"
+}
+
+status() {
+	echo -e "\033[0;34mstatus:\033[0m\n\t$*"
+}
