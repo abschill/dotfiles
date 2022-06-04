@@ -1,3 +1,3 @@
 #! /bin/bash
 
-git add .emacs .zshrc && git commit -m "$*" && git push origin dev-env
+git add .emacs .zshrc .zshenv util.zsh alias.zsh .vimrc .wget-hsts && git commit -m "$*" && git push origin dev-env
