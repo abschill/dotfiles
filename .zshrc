@@ -70,11 +70,11 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='emacs'
- else
-   export EDITOR='emacs'
- fi
+if [[ -n $SSH_CONNECTION ]]; then
+	export EDITOR='emacs'
+else
+	export EDITOR='emacs'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -86,7 +86,21 @@ export LANG=en_US.UTF-8
 #
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias la="ls -a"
-alias edit="emacs"
-alias eemacs="emacs ~/.emacs"
-alias e="emacs"
+# Test for an interactive shell.  There is no need to set anything
+# past this point for scp and rcp, and it's important to refrain from
+# outputting anything in those cases.
+if [[ $- != *i* ]] ; then
+	# Shell is non-interactive.  Be done now!
+	return
+fi
+
+if [[ -f ~/alias.zsh ]] then
+	source ~/alias.zsh
+else
+	printf "alias not found"
+fi
+if [[ -f ~/util.zsh ]] then
+	source ~/util.zsh
+else
+	printf "util not found"
+fi
