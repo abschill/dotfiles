@@ -1,0 +1,13 @@
+using xsltproc
+      : /opt/local/bin/xsl/docbook-xsl
+      ;
+
+using boostbook
+      : /opt/local/share/xsl/docbook-xsl/
+      : /opt/local/share/xml/docbook/4.2
+      ;
+using quickbook
+      : /usr/local/bin/quickbook
+      ;
+
+using doxygen ;
