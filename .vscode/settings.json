@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Zenburn",
+    "workbench.startupEditor": "none",
+	"editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "line-thin",
+	"editor.cursorBlinking": "expand",
+	"workbench.colorCustomizations": {
+		"editorLineNumber.activeForeground": "#00ff00",
+		"editorLineNumber.foreground": "#3270b3"
+	}
+}
