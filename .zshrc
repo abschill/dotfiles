@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export HAXE_STD_PATH="/opt/homebrew/lib/haxe/std"
 # Set name of the theme to load
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="avit"
@@ -104,3 +104,6 @@ if [[ -f ~/util.zsh ]] then
 else
 	printf "util not found"
 fi
+
+# Created by `pipx` on 2022-06-09 02:29:52
+export PATH="$PATH:/Users/abs/.local/bin"
