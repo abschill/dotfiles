@@ -7,7 +7,7 @@
 (menu-bar-mode -1)
 (set-window-margins nil 1)
 (setq custom-safe-themes t)
-(split-window-horizontally)
+;;(split-window-horizontally)
 (setq inhibit-splash-screen t)
 (global-set-key (kbd "C-c y") 'clipboard-yank)
 (global-set-key (kbd "C-c x") 'kill-ring-save)
