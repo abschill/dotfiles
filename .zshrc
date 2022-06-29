@@ -107,3 +107,5 @@ fi
 
 # Created by `pipx` on 2022-06-09 02:29:52
 export PATH="$PATH:/Users/abs/.local/bin"
+# flutter path set
+export PATH="$PATH:/Users/abs/Documents/github/flutter/bin"
