@@ -32,7 +32,7 @@ DISABLE_MAGIC_FUNCTIONS="true"
 DISABLE_AUTO_TITLE="true"
 
 #  enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
