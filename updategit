@@ -1,3 +1,3 @@
 #! /bin/bash
 
-git add .vscode/settings.json .opam/config .config/kitty/kitty.conf updategit user-config.jam .emacs .zshrc .zshenv util.zsh alias.zsh .vimrc .wget-hsts && git commit -m "$*" && git push origin dev-env
+git add .vscode/settings.json updategit .emacs .zshrc .zshenv util.zsh alias.zsh .vimrc .wget-hsts && git commit -m "$*" && git push origin dev-env
