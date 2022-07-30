@@ -2,7 +2,7 @@ alias la="ls -a"
 alias edit="emacs"
 alias eemacs="emacs ~/.emacs"
 alias e="emacs"
-
+alias kjv="~/Documents/github/kjv/kjv"
 alias mp="mplayer -fs"
 
 # Show me the size (sorted) of only the folders in this directory
